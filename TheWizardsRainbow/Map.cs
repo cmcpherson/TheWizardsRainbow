@@ -96,6 +96,7 @@ namespace TheWizardsRainbow
         public void Print()
         {
             
+            
             Console.ForegroundColor = MAP_COLOR;
             Console.BackgroundColor = MAP_BACKGROUND;
             for (int y = 0; y < Height; y++)
@@ -106,12 +107,12 @@ namespace TheWizardsRainbow
                         if (x == PlayerX && y == PlayerY)
                         {
                             Console.ForegroundColor = PLAYER_COLOR;
-                            Console.Write(" X ");
+                            Console.Write(" O ");
                             Console.ForegroundColor = MAP_COLOR;
                         }
                         else if (currentTile.IsAccessible)
                         {
-                            Console.Write("   ");
+                            Console.Write("   "); 
 
                         }
                         else
